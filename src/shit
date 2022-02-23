@@ -1,0 +1,16 @@
+try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out))) {
+        for (int i : arrSumm) {
+            try {
+                writer.write(String.valueOf(i));
+                writer.write(" ");
+                writer.flush();
+                System.out.println();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
